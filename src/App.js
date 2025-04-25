@@ -1,8 +1,6 @@
-
+import logo from './logo.svg';
 import './App.css';
-import ProductCard from './components/ProductCard';
-import { AddProductModal } from './components/AddProductModal';
-import { useState } from 'react';
+
 function App() {
 
 const [isOpen, setIsOpen] = useState(false);
