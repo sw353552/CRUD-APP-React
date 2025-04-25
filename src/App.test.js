@@ -4,7 +4,7 @@ import App from './App';
 test('renders Products header and Add Products button', () => {
   render(<App />);
   
-  const heading = screen.getByText(/products/i);
+  const heading = screen.getByRole('heading', { name: /products/i });
   expect(heading).toBeInTheDocument();
 
   const addButton = screen.getByRole('button', { name: /add products/i });
