@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import ProductCard from './components/ProductCard';
+import { AddProductModal } from './components/AddProductModal';
 
 function App() {
 

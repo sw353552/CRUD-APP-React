@@ -14,8 +14,10 @@ export const AddProductModal = ({ handleClose, handleAddProduct }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        handleAddProduct(data)
+        handleAddProduct(data);
+        handleClose(); // Close the modal after submission
     }
+
     return (
         <div className="fixed inset-0 flex justify-center items-center z-50">
             <div className="opacity-70 fixed inset-0 bg-black" />
