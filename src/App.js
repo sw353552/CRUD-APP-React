@@ -30,7 +30,7 @@ const handleDeleteProduct = (prodCode) => {
     <>
     <div className='w-full max-w-5xl mx-auto'>
       <div className='flex justify-between items-center my-10'>
-        <h1 className='text-5xl font-bold'>Products</h1>
+      <h1 data-testid="main-heading" className='text-5xl font-bold'>Products</h1>
         <button type='button' className='font-semibold bg-blue-500 text-white py-2 px-4 rounded-md text-l cursor-pointer' onClick={addProducts}>Add Products </button>
       </div>
       <div className='grid grid-cols-4 gap-5'>
