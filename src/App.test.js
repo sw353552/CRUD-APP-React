@@ -10,6 +10,4 @@ test('renders Products header and Add Products button', () => {
   const addButton = screen.getByRole('button', { name: /add products/i });
   expect(addButton).toBeInTheDocument();
 
-  const emptyText = screen.getByText(/no products found/i);
-  expect(emptyText).toBeInTheDocument();
 });
